@@ -46,3 +46,9 @@ EXTRA FUNCTIONS:
 #SSE(x,y)
 #SSR(x,y)  
 #SST(y)
+
+========================================
+Items remaining
+========================================
+CharGraph module
+Main module (Wip)
