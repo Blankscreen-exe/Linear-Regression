@@ -1,0 +1,22 @@
+=================
+InputCollection():
+=================
+- # of observations >> return Num
+- Obs entry >> return x,y=List->Dict
+- Scale Gap >> return x,y= num
+==============
+Calculation():
+==============
+- Starting value >> return x,y= num
+- Sxx >> return num
+- Sxy >> return num
+- a0 >> return num
+- a1 >> return num
+- y' >> return list
+- x^2 >> return list
+- y^2 >> return list
+- R >> return num
+- R^2 >> return num
+- SSE >> return num
+- SSR >> return num
+- SST >> return num
