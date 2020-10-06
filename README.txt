@@ -65,7 +65,7 @@ Run "main.py" using the python IDLE or directly by official version of python
 ========================================
 MODULE SPECS
 ========================================
-Calculation.py++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Calculation.py   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	#Sxy(x,y)		
 	#Sxx(x)			
 	#a1(Sxx,Sxy)		--slope
@@ -81,14 +81,14 @@ Calculation.py++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	#SSE(x,y)		--summation of squared error
 	#SSR(x,y)  		--summation of squared regression
 	#SST(y)			--summation of squared total
-Tools.py+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Tools.py   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	#verify(inpt,typ="int")	--verifies input and return True or False
 	#numOobs()		--takes number of observations. Specific scenario only
 	#DTpt(Obs_num,varName)	--makes a list of datapoints
 	#graphCreds()		--sets graph credentials. Specific scenario only
 	#MenuSelection()	--gives a menu selection algorithm. Specific scenario only
 	#TotalErr_Tools()	--calculates total error from the Tools module. Specific scenario only
-Graphmaker.py++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Graphmaker.py   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	#daPlot(x,y,TITLE,XLABEL,YLABEL,TEXT)	--plots graph with prespecified conditions
 	#Originalplots(Bind)	--displays original plots
 	#Regressionplots(Bind)	--displays regression plots
