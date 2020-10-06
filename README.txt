@@ -1,18 +1,43 @@
+##########
+Coded by:
+##########
+   __________    ___         __________   ____     ___   ___    __    
+  |\   ____  \  |\  \       |\   ____  \ |\   '.  |\  \ |\  \ .' .'   
+  \ \  \___\  \_\ \  \      \ \  \___\  \\ \    '.\ \  \\ \    .'     
+   \ \   _____  \\ \  \      \ \   ____  \\ \  \. '. \  \\ \    ''.   
+    \ \  \____\  \\ \  \______\ \  \__|\  \\ \  \'. '.\  \\ \  \'. '.  
+     \ \__________\\ \________\\ \__\ \ \__\\ \__\.'._____\\ \__\.'._'. 
+      \|__________| \|________| \|__|  \|__| \|__| '.|____| \|__| '|__| 
+                                                                                                                  ___ 
+   __________   _________   _________   _________   _________   ____     ___          _________       ___       .' .'| _________  
+  |\   ______\ |\   _____\ |\   ___  \ |\   _____\ |\   _____\ |\   '.  |\  \        |\   _____\     |.  '.   .' .'.' |\   _____\ 
+  \ \  \_____|_\ \  \____| \ \  \__\  \\ \  \___.| \ \  \___.| \ \    '.\ \  \       \ \  \___.|     '.'.  '.' .'.'   \ \  \___.| 
+   \ \_______  \\ \  \      \ \      __\\ \   __\   \ \   __\   \ \  \. '. \  \       \ \   __\        '.'.   ..'      \ \   __\  
+    \|.______\  \\ \  \______\ \  \. '.| \ \  \_|____\ \  \_|____\ \  \'. '.\  \   ___ \ \  \_|____      .' .  '.       \ \  \_|____ 
+      |\_________\\ \________\\ \__\'._'. \ \________\\ \________\\ \__\.'._____\ |\__\ \ \________\   .' .'.'.__'.      \ \________\
+      \|_________| \|________| \|__|'.|__| \|________| \|________| \|__| '.|____| \|__|  \|________| .' .'.' '.|__|       \|________| 
+                                                                                                   .'_.'.'             
+                                                                                                   |__|'                
 ========================================
 AIM/Objective
 ========================================
 This program aims to take relevant inputs in order to plot a Linear-regression using a character-based graph.
+This program also misbehaves on wrong inputs.
+Like if you would enter alphabets instead of numbers when required
+This program also shuts down itself on multiple instances if too many wrong inputs are provided.
+Good luck Having fun with this program!
 
 ========================================
 Program Specs
 ========================================
-This program is writen in Python 3.7.7
+This program is writen in Python 3.8.6
+Date finished: 5 Oct 2020
+Modlues Imported:
+1- matplotlib
+2- time
 
-========================================
-Symbology
-========================================
-Original points will be shown by "X" symbol
-Regression points will be shown by "@" symbol
+NOTE: Yeah! Those are the only ready made stuff I've used. Everything else is my doing.
+No machine learning is used.
 
 ========================================
 Basic algorithm followed by the program
@@ -20,35 +45,53 @@ Basic algorithm followed by the program
 1-Input will be taken for observation range
 2-List will be made for all "x" inputs
 3-List will be made for all "y" inputs
-4-User will be presented with the final table of both "x" and "y" values
-5-Input will be taken for the scale "values" and "gaps"
-6-A character-based graph will be shown to the user plotting the regression line and original values
-7-User will be asked if they want to see additional information
-8-If yes, Correlation coefficient and Coefficient of determination will be shown with comments.
-  Also, The equation of SST=SSE+SSR will be shown
+4-User will be presented with the final table of both "x" and "y" values (original plots)
+5-User will be presented with the final table of both "x" and "y hat" values (regression plots)
+6-Some calculations will be done and user will be presented with a Graph\
+7-User will need to take a screen shot of the grapht if they like and close the Graph window to proceed further.
+8-User will be asked if they want to see additional information
+9-If yes, A menu will appear from which the user can select any inference they like.
+10-After user is done with observation, exiting seqence will follow.
+11-User will be humiliated if they have a high error count 
 
 ========================================
-MODULE: Calculations
+Instructions to run
 ========================================
-list of functions:
-#Sxy(x,y)
-#Sxx(x)
-#a1(Sxx,Sxy)
-#a0(x,y)
-#y_Hat(x,y)
-#axb(lst1,lst2)
-#list_sum(lst)
-#list_square(lst)
-#list_mean(var)
-
-EXTRA FUNCTIONS:
-#R(x,y)
-#SSE(x,y)
-#SSR(x,y)  
-#SST(y)
+Download these things:
+1- python 3.8.6 from official site
+2- matplotlib library using pip
+Run "main.py" using the python IDLE or directly by official version of python
 
 ========================================
-Items remaining
+MODULE SPECS
 ========================================
-CharGraph module
-Main module (Wip)
+Calculation.py++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	#Sxy(x,y)		
+	#Sxx(x)			
+	#a1(Sxx,Sxy)		--slope
+	#a0(x,y)		--Y-intercept
+	#y_Hat(x,y)		--regression plots for Y
+	#axb(lst1,lst2)		--multiplies corresponding values of both list params
+	#list_sum(lst)		--summation of  alist
+	#list_square(lst)	--square of a list
+	#list_mean(var)		--mean of a list
+	
+	EXTRA FUNCTIONS:
+	#R(x,y)			--Correlation coefficient	
+	#SSE(x,y)		--summation of squared error
+	#SSR(x,y)  		--summation of squared regression
+	#SST(y)			--summation of squared total
+Tools.py+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	#verify(inpt,typ="int")	--verifies input and return True or False
+	#numOobs()		--takes number of observations. Specific scenario only
+	#DTpt(Obs_num,varName)	--makes a list of datapoints
+	#graphCreds()		--sets graph credentials. Specific scenario only
+	#MenuSelection()	--gives a menu selection algorithm. Specific scenario only
+	#TotalErr_Tools()	--calculates total error from the Tools module. Specific scenario only
+Graphmaker.py++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	#daPlot(x,y,TITLE,XLABEL,YLABEL,TEXT)	--plots graph with prespecified conditions
+	#Originalplots(Bind)	--displays original plots
+	#Regressionplots(Bind)	--displays regression plots
+	#CoffR(X,Y)		--displays Correlation coefficient
+	#CoffR2(X,Y)		--displays Coefficient of determination
+	#SumSqErr(X,Y)		--displays Error Analysis
