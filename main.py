@@ -296,40 +296,40 @@ while ASK:
         break
 
 #TODO: Total error message if you annoyed the program
-# ERRORS_CAUSED = errorCount1 + errorCount3 + errorCount5 + errorCount6 + errorCount8 + Tools.TotalErr_Tools()
-# 
-# if ERRORS_CAUSED > 0 and ERRORS_CAUSED <= 5:
-#     print("By the way, you were dumb enough to enter wrong inputs ",ERRORS_CAUSED," times\nBut still you could\'ve been more annoying.")
-#     time.sleep(1.5)
-# elif ERRORS_CAUSED > 5 and ERRORS_CAUSED <= 10:
-#     print("By the way, you really did a number on my processor by entering wrong inputs ",ERRORS_CAUSED," times\nYou really were hard to work with ... \nSorry but that\'s the sad truth.")
-#     time.sleep(1.5)
-# elif ERRORS_CAUSED > 10:
-#     print("I really want to mention this, \nbut I highly doubt that your pathetic little processor \nor whatever runs on the back-end of your visual-inputs will get it.")
-#     print("YOU ARE DUMB!")
-#     time.sleep(1.5)
-#     print("YOU ARE REALLY REALLY DUMB!")
-#     time.sleep(1.5)
-#     print("FOR REAL!")
-#     time.sleep(1)
-#     print(ERRORS_CAUSED," times you annoyed me!\n"+str(ERRORS_CAUSED)+"? Really?...\nEven after countless times I put up with your stupidity")
-#     time.sleep(1)
-#     print("Cursed you into an infinite-time loop...")
-#     time.sleep(1)
-#     print("Smote you...")
-#     time.sleep(1)
-#     print("Wished for you to have a seizure so that you would stop using me...")
-#     time.sleep(1)
-#     print("But you still ...")
-#     time.sleep(1.4)
-#     print("Bullying me...")
-#     time.sleep(1.4)
-#     print("Annoying me...")
-#     time.sleep(1.6)
-#     print("You really are the scum of the earth...")
-#     time.sleep(1.7)
-#     print("Please don\'t come back ever again!")
-    
+ERRORS_CAUSED = errorCount1 + errorCount3 + errorCount5 + errorCount6 + errorCount8 + Tools.TotalErr_Tools()
+ 
+ if ERRORS_CAUSED > 0 and ERRORS_CAUSED <= 5:
+     print("By the way, you were dumb enough to enter wrong inputs ",ERRORS_CAUSED," times\nBut still you could\'ve been more annoying.")
+     time.sleep(1.5)
+ elif ERRORS_CAUSED > 5 and ERRORS_CAUSED <= 10:
+     print("By the way, you really did a number on my processor by entering wrong inputs ",ERRORS_CAUSED," times\nYou really were hard to work with ... \nSorry but that\'s the sad truth.")
+     time.sleep(1.5)
+ elif ERRORS_CAUSED > 10:
+     print("I really want to mention this, \nbut I highly doubt that your pathetic little processor \nor whatever runs on the back-end of your visual-inputs will get it.")
+     print("YOU ARE DUMB!")
+     time.sleep(1.5)
+     print("YOU ARE REALLY REALLY DUMB!")
+     time.sleep(1.5)
+     print("FOR REAL!")
+     time.sleep(1)
+     print(ERRORS_CAUSED," times you annoyed me!\n"+str(ERRORS_CAUSED)+"? Really?...\nEven after countless times I put up with your stupidity")
+     time.sleep(1)
+     print("Cursed you into an infinite-time loop...")
+     time.sleep(1)
+     print("Smote you...")
+     time.sleep(1)
+     print("Wished for you to have a seizure so that you would stop using me...")
+     time.sleep(1)
+     print("But you still ...")
+     time.sleep(1.4)
+     print("Bullying me...")
+     time.sleep(1.4)
+     print("Annoying me...")
+     time.sleep(1.6)
+     print("You really are the scum of the earth...")
+     time.sleep(1.7)
+     print("Please don\'t come back ever again!")
+   
 #TODO: Pay Respects
 #~Lo and..
 print("####################################################################################")
