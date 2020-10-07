@@ -3,6 +3,11 @@
 #Read README for more details
 #BEGIN CODE_
 
+#master error count from Tools.py
+errorCount2 = 0
+errorCount4 = 0
+errorCount7 = 0
+
 
 #TODO: Returns True if the parameter is the desired input type. Else returns False
 def verify(inpt,typ="int"):
@@ -200,10 +205,8 @@ def MenuSelection():
             errorMsg7 = 'ERROR 007: You can go and cry in a corner now. Just don\'t spill any snot on me...'
 
 
-# err2 = errorCount2
-# err4 = errorCount4
-# err7 = errorCount7
+
 #TODO: To return total error
-# def TotalErr_Tools():
-#     err = errorCount2 + errorCount4 + errorCount7
-#     return err
+def TotalErr_Tools():
+    err = errorCount2 + errorCount4 + errorCount7
+    return err
