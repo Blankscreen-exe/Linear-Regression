@@ -44,7 +44,7 @@ def Originalplots(Bind):
 def Regressionplots(Bind):
     #~Display
     print('==================================')
-    print('Following are your ORIGINAL PLOTS:')
+    print('Following are your REGRESSION PLOTS:')
     print('==================================')
     print('      X      --|-->  Y\' = f(X) ')
     print('--------------------------------')
@@ -151,9 +151,9 @@ def SumSqErr(X,Y):
     print("Summation of squared Regression: ",SSR)
     print("Verification...\n    ",round(SST,6)," = ",round(SSR,6)," + ",round(SSE,6),"\n     SST     =     SSR     +     SSE")
     if SSE > SSR:
-        print("\nError seems to be less than the probability of prediction")
-    elif SSR < SSE:
         print("\nError seems to be more than the probability of prediction")
+    elif SSR > SSE:
+        print("\nError seems to be less than the probability of prediction")
     if round(SST,3) != round(SSR+SSE,3):
         print("Seems like I was unable to calculate the true equation. Tell my creator he will be able to help\n Im sure of it! He is a very kind person. He'll listen to you.")
     if round(SST,3) == round(SSR+SSE,3):
