@@ -21,7 +21,7 @@ Coded by:
 ========================================
 AIM/Objective
 ========================================
-This program aims to take relevant inputs in order to plot a Linear-regression using a character-based graph.
+This program aims to take relevant inputs in order to plot a Linear-regression using a matplotlib graph.
 This program also misbehaves on wrong inputs.
 Like if you would enter alphabets instead of numbers when required
 This program also shuts down itself on multiple instances if too many wrong inputs are provided.
