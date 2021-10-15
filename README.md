@@ -1,23 +1,7 @@
 
 Coded by:
-
-   __________    ___         __________   ____     ___   ___    __    
-  |\   ____  \  |\  \       |\   ____  \ |\   '.  |\  \ |\  \ .' .'   
-  \ \  \___\  \_\ \  \      \ \  \___\  \\ \    '.\ \  \\ \    .'     
-   \ \   _____  \\ \  \      \ \   ____  \\ \  \. '. \  \\ \    ''.   
-    \ \  \____\  \\ \  \______\ \  \__|\  \\ \  \'. '.\  \\ \  \'. '.  
-     \ \__________\\ \________\\ \__\ \ \__\\ \__\.'._____\\ \__\.'._'. 
-      \|__________| \|________| \|__|  \|__| \|__| '.|____| \|__| '|__| 
-                                                                                                                  ___ 
-   __________   _________   _________   _________   _________   ____     ___          _________       ___       .' .'| _________  
-  |\   ______\ |\   _____\ |\   ___  \ |\   _____\ |\   _____\ |\   '.  |\  \        |\   _____\     |.  '.   .' .'.' |\   _____\ 
-  \ \  \_____|_\ \  \____| \ \  \__\  \\ \  \___.| \ \  \___.| \ \    '.\ \  \       \ \  \___.|     '.'.  '.' .'.'   \ \  \___.| 
-   \ \_______  \\ \  \      \ \      __\\ \   __\   \ \   __\   \ \  \. '. \  \       \ \   __\        '.'.   ..'      \ \   __\  
-    \|.______\  \\ \  \______\ \  \. '.| \ \  \_|____\ \  \_|____\ \  \'. '.\  \   ___ \ \  \_|____      .' .  '.       \ \  \_|____ 
-      |\_________\\ \________\\ \__\'._'. \ \________\\ \________\\ \__\.'._____\ |\__\ \ \________\   .' .'.'.__'.      \ \________\
-      \|_________| \|________| \|__|'.|__| \|________| \|________| \|__| '.|____| \|__|  \|________| .' .'.' '.|__|       \|________| 
-                                                                                                   .'_.'.'             
-                                                                                                   |__|'                
+![# BLANK_SCREEN.exe](bs.png)
+      
 -------------------------------
 ## AIM/Objective
 
@@ -53,38 +37,38 @@ No machine learning is used.
 
 ## Instructions to run
 Download these things:
-1- python 3.8.6 from official site
-2- matplotlib library using pip
-Run "main.py" using the python IDLE or directly by official version of python
+1. python 3.8.6 from official site
+2. matplotlib library using pip
+3. pyinstaller for making .exe file
 
 ## MODULE SPECS
 ### Calculation.py   
-	#Sxy(x,y)		
-	#Sxx(x)			
-	#a1(Sxx,Sxy)		--slope
-	#a0(x,y)		--Y-intercept
-	#y_Hat(x,y)		--regression plots for Y
-	#axb(lst1,lst2)		--multiplies corresponding values of both list params
-	#list_sum(lst)		--summation of  alist
-	#list_square(lst)	--square of a list
-	#list_mean(var)		--mean of a list
+	Sxy(x,y)		
+	Sxx(x)			
+	a1(Sxx,Sxy)		--slope
+	a0(x,y)		--Y-intercept
+	y_Hat(x,y)		--regression plots for Y
+	axb(lst1,lst2)		--multiplies corresponding values of both list params
+	list_sum(lst)		--summation of  alist
+	list_square(lst)	--square of a list
+	list_mean(var)		--mean of a list
 	
 	EXTRA FUNCTIONS:
-	#R(x,y)			--Correlation coefficient	
-	#SSE(x,y)		--summation of squared error
-	#SSR(x,y)  		--summation of squared regression
-	#SST(y)			--summation of squared total
+	R(x,y)			--Correlation coefficient	
+	SSE(x,y)		--summation of squared error
+	SSR(x,y)  		--summation of squared regression
+	SST(y)			--summation of squared total
 ### Tools.py   
-	#verify(inpt,typ="int")	--verifies input and return True or False
-	#numOobs()		--takes number of observations. Specific scenario only
-	#DTpt(Obs_num,varName)	--makes a list of datapoints
-	#graphCreds()		--sets graph credentials. Specific scenario only
-	#MenuSelection()	--gives a menu selection algorithm. Specific scenario only
-	#TotalErr_Tools()	--calculates total error from the Tools module. Specific scenario only
+	verify(inpt,typ="int")	--verifies input and return True or False
+	numOobs()		--takes number of observations. Specific scenario only
+	DTpt(Obs_num,varName)	--makes a list of datapoints
+	graphCreds()		--sets graph credentials. Specific scenario only
+	MenuSelection()	--gives a menu selection algorithm. Specific scenario only
+	TotalErr_Tools()	--calculates total error from the Tools module. Specific scenario only
 ### Graphmaker.py   
-	#daPlot(x,y,TITLE,XLABEL,YLABEL,TEXT)	--plots graph with prespecified conditions
-	#Originalplots(Bind)	--displays original plots
-	#Regressionplots(Bind)	--displays regression plots
-	#CoffR(X,Y)		--displays Correlation coefficient
-	#CoffR2(X,Y)		--displays Coefficient of determination
-	#SumSqErr(X,Y)		--displays Error Analysis
+	daPlot(x,y,TITLE,XLABEL,YLABEL,TEXT)	--plots graph with prespecified conditions
+	Originalplots(Bind)	--displays original plots
+	Regressionplots(Bind)	--displays regression plots
+	CoffR(X,Y)		--displays Correlation coefficient
+	CoffR2(X,Y)		--displays Coefficient of determination
+	SumSqErr(X,Y)		--displays Error Analysis
